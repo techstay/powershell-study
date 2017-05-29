@@ -8,3 +8,4 @@
 - killer-virus.ps1 循环杀进程的脚本
 - check-dotnet-framework-version.ps1 检测当前系统安装.NET框架版本的脚本
 - port-processes-to-excel.ps1 获取当前进程并导出到Excel的脚本
+- set-jdk-env-variables.ps1 配置JDK环境变量的脚本
