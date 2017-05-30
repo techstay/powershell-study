@@ -1,19 +1,19 @@
-# ½«µ±Ç°½ø³ÌĞÅÏ¢Ğ´ÈëExcel±í
+# å°†å½“å‰è¿›ç¨‹ä¿¡æ¯å†™å…¥Excelè¡¨
 
-# ´ò¿ªExcel
+# æ‰“å¼€Excel
 $excel = New-Object -ComObject Excel.Application
 $excel.Visible = $true
 $workbook = $excel.Workbooks.Add()
 $worksheet = $workbook.Worksheets.Item(1)
 
-# Ğ´ÈëÊı¾İ
-$worksheet.Cells(1, 1) = "Ãû³Æ"
-$worksheet.Cells(1, 2) = "ÃèÊö"
+# å†™å…¥æ•°æ®
+$worksheet.Cells(1, 1) = "åç§°"
+$worksheet.Cells(1, 2) = "æè¿°"
 $worksheet.Cells(1, 3) = "PID"
-$worksheet.Cells(1, 4) = "¹«Ë¾"
-$worksheet.Cells(1, 5) = "ÎÄ¼şÂ·¾¶"
+$worksheet.Cells(1, 4) = "å…¬å¸"
+$worksheet.Cells(1, 5) = "æ–‡ä»¶è·¯å¾„"
 
-# »ñÈ¡½ø³ÌĞÅÏ¢
+# è·å–è¿›ç¨‹ä¿¡æ¯
 Get-Process |Select-Object name , description, id , company, path|foreach {$row = 2} {
     $worksheet.Cells($row, 1) = $_.name
     $worksheet.Cells($row, 2) = $_.description
