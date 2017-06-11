@@ -31,6 +31,7 @@
     <Compile Include="port-processes-to-excel.ps1" />
     <Compile Include="remove-thunder9-browser.ps1" />
     <Compile Include="set-jdk-env-variables.ps1" />
+    <Compile Include="stop-useless-services.ps1" />
     <Compile Include="update-hosts.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

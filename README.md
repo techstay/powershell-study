@@ -10,3 +10,4 @@
 - port-processes-to-excel.ps1 获取当前进程并导出到Excel的脚本
 - set-jdk-env-variables.ps1 配置JDK环境变量的脚本
 - remove-thunder9-browser.ps1 关闭迅雷9浏览器的脚本
+- stop-useless-services.ps1 关闭多余服务的系统优化脚本
