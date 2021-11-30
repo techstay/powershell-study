@@ -12,4 +12,6 @@ Set-DnsClientServerAddress -InterfaceIndex $interface_index -ServerAddresses $CL
 
 # If it goes wrong, uncomment this to reset network settings
 # SET-DnsClientServerAddress -InterfaceIndex $interface_index -ResetServerAddresses
+Write-Host "Change DNS Successfully"
 Clear-DnsClientCache
+Write-Host "Clear DNS Cache"
